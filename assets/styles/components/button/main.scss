@@ -1,0 +1,22 @@
+.btn {
+  padding: 12px 18px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: $white_clr;
+  background: linear-gradient(95.41deg, #596FCC 0%, #6F79D8 100%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(95.41deg, #7059CC 0%, #7E6FD8 100%);
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+}

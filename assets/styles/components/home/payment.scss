@@ -1,0 +1,41 @@
+.home-payment {
+  margin: 0 auto;
+  margin-top: 121px;
+  width: 48.9%;
+  text-align: center;
+
+  h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 165%;
+    text-transform: capitalize;
+    color: $white_clr;
+    margin-top: 28px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 180%;
+    color: $gray_clr;
+    margin-top: 28px;
+  }
+
+  &__methods {
+    padding-top: 48px;
+    margin: 0 auto;
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    grid-gap: 48px;
+    position: relative;
+
+    &::before {
+      content: '';
+      height: 1px;
+      width: 70%;
+      background: $line_clr;
+      position: absolute;
+      top: 0;
+    }
+  }
+}

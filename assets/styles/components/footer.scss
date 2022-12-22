@@ -1,0 +1,129 @@
+.footer {
+  .label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.015em;
+    color: $gray_clr;
+  }
+
+  &-hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 15px;
+    height: 64px;
+    background: linear-gradient(95.41deg, #596FCC 0%, #6F79D8 100%);
+
+    p {
+      font-size: 13px;
+      line-height: 24px;
+      color: $white_clr;
+    }
+  }
+
+  &-container {
+    padding: 120px 0;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 0.5fr;
+    grid-gap: 103px;
+  }
+
+  &-data {
+    p {
+      font-size: 13px;
+      line-height: 180%;
+      letter-spacing: 0.015em;
+      color: $gray_clr;
+      margin-top: 30px;
+      width: 80%;
+    }
+  }
+
+  &-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 103px;
+
+    ul {
+      margin-top: 30px;
+      list-style: none;
+
+      li {
+        margin-top: 25px;
+
+        &:first-child {
+          margin: 0;
+        }
+      }
+
+      a {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+        color: $white_clr;
+        text-decoration: none;
+        transition-duration: .25s;
+
+        &:hover {
+          color: $main_clr;
+          transition-duration: .25s;
+        }
+      }
+    }
+  }
+
+  &-social {
+    &__links {
+      margin-top: 30px;
+      display: flex;
+      grid-gap: 30px;
+
+      path {
+        fill: $white_clr;
+        transition-duration: .25s;
+      }
+
+      a:hover path {
+        fill: $main_clr;
+        transition-duration: .25s;
+      }
+    }
+  }
+
+  &-footer {
+    padding: 48px 0;
+    border-top: 1px solid $line_clr;
+
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__copy {
+      p {
+        font-size: 12px;
+        line-height: 26px;
+        color: $secondary_clr;
+        letter-spacing: 0.015em;
+      }
+    }
+
+    &__developed {
+      p {
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: 0.015em;
+        color: $secondary_clr;
+
+        a {
+          font-weight: 800;
+          font-size: 14px;
+          line-height: 17px;
+          color: $white_clr;
+        }
+      }
+    }
+  }
+}

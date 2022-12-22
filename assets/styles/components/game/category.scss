@@ -1,0 +1,45 @@
+.game-category {
+  margin-top: 70px;
+  border-bottom: 1px solid rgba(243, 243, 243, 0.05);
+  padding-bottom: 60px;
+
+  &:first-child {
+    margin: 0;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-secondary {
+      background: #21242D;
+      color: $gray_clr;
+
+      &:hover {
+        background: #40444F;
+        color: $secondary_clr;
+      }
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      color: $white_clr;
+      margin-left: 8px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 204px);
+    grid-gap: 28px;
+    margin-top: 28px;
+  }
+}

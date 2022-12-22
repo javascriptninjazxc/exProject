@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+@mixin font-normal-normal {
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-normal-600 {
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin font-normal-500 {
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin font-normal-bold {
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin font-normal-normal-14-24 {
+  @include font-normal-normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin font-normal-normal-14-120P {
+  @include font-normal-normal;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+@mixin font-normal-normal-14-160P {
+  @include font-normal-normal;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+@mixin font-normal-normal-14-180P {
+  @include font-normal-normal;
+  font-size: 14px;
+  line-height: 180%;
+}
+
+@mixin font-normal-500-12-24 {
+  @include font-normal-500;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+@mixin font-normal-500-12-15 {
+  @include font-normal-500;
+  font-size: 12px;
+  line-height: 15px;
+}
+@mixin font-normal-500-14-24 {
+  @include font-normal-500;
+  font-size: 14px;
+  line-height: 24px;
+}
+@mixin font-normal-500-14-28 {
+  @include font-normal-500;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+@mixin font-normal-500-14-140P {
+  @include font-normal-500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+@mixin font-normal-500-14-160P {
+  @include font-normal-500;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+@mixin font-normal-600-13-24 {
+  @include font-normal-600;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+@mixin font-normal-600-14-16 {
+  @include font-normal-600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin font-normal-600-18-24 {
+  @include font-normal-600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@mixin font-normal-600-20-24 {
+  @include font-normal-600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin font-normal-bold-10-100P {
+  @include font-normal-bold;
+  font-size: 10px;
+  line-height: 160%;
+}
+
+@mixin font-normal-bold-14-20 {
+  @include font-normal-bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin font-normal-bold-14-24 {
+  @include font-normal-bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin font-normal-bold-14-160P {
+  @include font-normal-bold;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+@mixin font-normal-bold-24-100P {
+  @include font-normal-bold;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+@mixin font-normal-bold-24-160P {
+  @include font-normal-bold;
+  font-size: 24px;
+  line-height: 160%;
+}
+
+@mixin font-normal-bold-28-100P {
+  @include font-normal-bold;
+  font-size: 28px;
+  line-height: 100%;
+}
+
+@mixin font-normal-bold-36-160P {
+  @include font-normal-bold;
+  font-size: 36px;
+  line-height: 160%;
+}

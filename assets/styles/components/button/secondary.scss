@@ -1,0 +1,42 @@
+.btn-secondary {
+  color: #98A4B0;
+  background: $btn_clr;
+  transition-duration: .25s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background: #40444F;
+    color: $white_clr;
+    transition-duration: .25s;
+  }
+}
+
+.btn-outline {
+  color: #98A4B0;
+  border:  2px solid #40444F;
+
+  background: transparent;
+  transition-duration: .25s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background: #40444F;
+    color: $white_clr;
+    transition-duration: .25s;
+  }
+}
+
+.btn-paginate {
+  min-width: 30px;
+  padding: 10px;
+  
+  .active {
+    background: #40444F;
+  }
+}

@@ -1,0 +1,295 @@
+.game-header {
+  display: block;
+  border-bottom: 1px solid rgba(243, 243, 243, 0.05);
+  padding-bottom: 60px;
+
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    img {
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      margin: 40px 350px;
+      color: #616674;
+      font-size: 14px;
+      line-height: 180%;
+    }
+
+    .divider {
+      border-bottom: 1px solid rgba(243, 243, 243, 0.05);
+      width: 500px;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: space-between;
+
+      button {
+        margin-right: 10px;
+      }
+    }
+
+    .softs {
+      margin-top: 40px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      color: #616674;
+
+      span {
+        color: #F3F3F3;
+        font-size: 16px;
+      }
+    }
+
+    h4 {
+      color: #616674;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 15px 0;
+    }
+
+    h1 {
+      color: #F3F3F3;
+      font-size: 36px;
+      font-weight: bold;
+    }
+  }
+}
+
+.product-card {
+
+  &-image {
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0px 0px;
+    height: 204px;
+    width: 100%;
+    padding: 20px 15px;
+    &-bestseller {
+      padding: 8px 10px;
+      background: #55CD93;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 18px;
+      border-radius: 15px;
+      color: #F3F3F3;
+    }
+  }
+
+   &-data {
+      padding: 0 20px;
+      background: #21242D;
+      padding-top: 20px;
+      border-radius: 0px 0px 5px 5px;    
+      
+      &-top {
+        border-bottom: 1px solid rgba(243, 243, 243, 0.05);
+        padding-bottom: 10px;
+      }
+
+      &-info {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(243, 243, 243, 0.05);
+        padding: 8px 0 20px 0;
+
+        span {
+          color: #616674;
+          margin-top: 10px;
+          font-size: 12px;
+        }
+
+        span.green {
+          color: #55CD93;
+        }
+      }
+
+      &-button {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+
+        &-btn {
+          &-full {
+            width: 100%;
+            button {width: 100%;}
+          }
+        }
+
+        &-price {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 5px 0;
+
+          .old-price {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 18px;
+            color: #616674;
+            text-decoration-line: line-through;
+          }
+          .percent {
+            color: #84B750;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      .price-from {
+        width: 92px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #2A2D35;
+        border-radius: 5px;
+        color: $secondary_clr;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+      }
+
+      .type {
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: $gray_clr;
+      }
+
+      .label {
+        margin: 10px 0;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: #F3F3F3;
+      }
+
+      .value {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: $secondary_clr;
+        margin-top: 6px;
+      }
+
+      h4 {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: $white_clr;
+        margin-top: 2px;
+      }
+    }
+
+
+  &__mini {
+    display: grid;
+    grid-template-columns: 82px 1fr;
+    background: #21242D;
+    border-radius: 5px;
+    margin-top: 28px;
+    cursor: pointer;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &-image {
+      background-position: center;
+      background-size: cover;
+      border-radius: 5px 0px 0px 5px;
+      height: 82px;
+      width: 100%;
+    }
+
+    &-data {
+      display: grid;
+      grid-template-columns: 2fr 1fr 92px;
+      align-items: center;
+      padding: 0 16px;
+
+      .price-from {
+        width: 92px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #2A2D35;
+        border-radius: 5px;
+        color: $secondary_clr;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          background: #40444F;
+          color: #F3F3F3;
+        }
+      }
+
+      .type {
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: $gray_clr;
+      }
+
+      .label {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: $gray_clr;
+      }
+
+      .value {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: $secondary_clr;
+        margin-top: 6px;
+      }
+
+      h4 {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: $white_clr;
+        margin-top: 2px;
+      }
+    }
+  }
+}

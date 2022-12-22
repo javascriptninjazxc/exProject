@@ -1,0 +1,81 @@
+.home-advantages {
+  background-image: url('/images/advantages.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 60px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  min-height: 534px;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 121px;
+
+  &__divider {
+    margin-top: 50px;
+    width: 344px;
+    height: 1px;
+    background: rgba(243, 243, 243, 0.02);
+  }
+
+  &__head {
+    p {
+      color: #5F79EE;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: $white_clr;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 48px;
+      text-transform: capitalize;
+      margin-top: 16px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__card {
+    border-radius: 10px;
+    padding: 20px;
+    width: 344px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    opacity: .7;
+    cursor: pointer;
+
+    h3 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      text-transform: capitalize;
+      color: $white_clr;
+      margin-top: 28px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 24px;
+      color: $gray_clr;
+      width: 75%;
+      margin: 0 auto;
+      margin-top: 25px;
+    }
+    &:hover {
+      opacity: 1;
+      background: #21242D;
+    }
+  }
+}

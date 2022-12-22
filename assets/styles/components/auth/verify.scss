@@ -1,0 +1,128 @@
+.verify {
+
+  // .verify__content
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .verify__box
+
+  &__box {
+    width: 443px;
+    padding: 60px;
+  }
+
+  // .verify__header
+
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(243, 243, 243, 0.02);
+    margin-bottom: 30px;
+  }
+
+  // .verify__avatar
+
+  &__avatar {
+    margin-bottom: 30px;
+  }
+
+  // .verify__title
+
+  &__title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.012em;
+    margin-bottom: 20px;
+  }
+
+  // .verify__descr
+
+  &__descr {
+    color: #616674;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.012em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  // .verify__body
+
+  &__body {}
+
+  // .verify__items
+
+  // .verify__error
+
+  &__error {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(211, 65, 69, 0.08);
+    border-radius: 5px;
+    padding: 8px 16px;
+  }
+
+  &__msg {
+    width: 265px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  // .verify__error-msg
+
+  &__error-msg {
+    color: #D34145;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    padding-left: 13px;
+    text-transform: capitalize;
+  }
+
+  // .verify__code
+
+  &__code {
+    color: #F3F3F3;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.012em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      color: #5B70CD;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+  }
+}
+
+.box {
+  background: #13151D;
+  border-radius: 5px;
+  width: 43px;
+  height: 52px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.input__code {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 13px;
+  margin-bottom: 30px;
+}

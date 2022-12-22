@@ -1,0 +1,122 @@
+.home-slider {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 360px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__controls {
+    position: absolute;
+    top: 28px;
+    z-index: 2;
+    display: flex;
+
+    &-toggle-left {
+      position: absolute;
+      left: 28px;
+      bottom: 28px;
+      z-index: 2;
+      cursor: pointer;
+    }
+    &-toggle-right {
+      position: absolute;
+      right: 28px;
+      bottom: 28px;
+      z-index: 2;
+      cursor: pointer;
+    }
+  }
+
+  &__control {
+    width: 84px;
+    height: 4px;
+    border-radius: 8px;
+    background: #2A2D35;
+    margin-left: 28px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &-fill {
+      background: $main_clr;
+      height: 100%;
+      border-radius: 8px;
+      transition-duration: .1s;
+    }
+  }
+
+  &__slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  &__slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition-duration: .5s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(50% 50% at 50% 50%, rgba(33, 36, 45, 0) 0%, rgba(33, 36, 45, 0.24) 100%), rgba(33, 36, 45, 0.48);
+    }
+
+    &-data {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+
+      h2 {
+        color: $white_clr;
+        font-size: 28px;
+        line-height: 48px;
+      }
+
+      .btn-secondary {
+        color: $secondary_clr;
+
+        &:hover {
+          color: $white_clr;
+        }
+      }
+
+      p.text {
+        margin-top: 12px;
+        font-size: 13px;
+        line-height: 24px;
+        color: $secondary_clr;
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+
+        &-value {
+          margin-right: 28px;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 24px;
+          color: $white_clr;
+
+          span {
+            font-size: 13px;
+            color: $gray_clr;
+          }
+        }
+      }
+    }
+  }
+}

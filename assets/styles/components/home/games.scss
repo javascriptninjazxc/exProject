@@ -1,0 +1,20 @@
+.home-games {
+  &__cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 28px;
+    margin-top: 121px;
+  }
+
+  &__col {
+    padding: 28px;
+    background: rgba(33, 36, 45, 0.64);
+    border-radius: 5px;
+
+    &-data {
+      padding-top: 28px;
+      margin-top: 28px;
+      border-top: 1px solid $line_clr;
+    }
+  }
+}

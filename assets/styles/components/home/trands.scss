@@ -1,0 +1,47 @@
+.home-trands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px;
+  background: #21242D;
+  border-radius: 5px;
+  margin-top: 48px;
+
+  &__trands {
+    display: flex;
+    justify-content: space-between;
+
+    &-image {
+      padding: 0 30px;
+      border-right: 1px solid rgba(243, 243, 243, 0.05);
+
+      img {
+        border-radius: 10px;
+        transition: all .2s ease-in-out;
+        padding: 2px;
+      }
+      img:hover {
+        cursor: pointer;
+        background: #2A2D35;
+      }
+    }
+    &-image:last-child {
+      padding-right: 5px;
+      border-right: none;
+    }
+  }
+
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 24px;
+      color: $yellow_clr;
+      margin-left: 10px;
+    }
+  }
+}
